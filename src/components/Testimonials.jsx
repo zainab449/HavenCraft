@@ -58,7 +58,7 @@ export default function Testimonials() {
 
           <Quote size={48} color="var(--primary)" style={{ opacity: 0.4, marginBottom: '16px' }} />
 
-          <h3 style={{ fontSize: '28px', color: '#ffffff', fontWeight: 500, lineHeight: 1.4, marginBottom: '32px', minHeight: '120px' }}>
+          <h3 style={{ fontSize: 'clamp(18px, 4vw, 28px)', color: '#ffffff', fontWeight: 500, lineHeight: 1.5, marginBottom: '28px' }}>
             "{reviews[currentIndex].text}"
           </h3>
 
@@ -75,6 +75,7 @@ export default function Testimonials() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>
             <button
               onClick={prevSlide}
+              aria-label="Previous testimonial"
               style={{
                 width: '44px',
                 height: '44px',
@@ -96,6 +97,7 @@ export default function Testimonials() {
             </span>
             <button
               onClick={nextSlide}
+              aria-label="Next testimonial"
               style={{
                 width: '44px',
                 height: '44px',

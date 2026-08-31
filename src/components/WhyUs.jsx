@@ -28,7 +28,7 @@ export default function WhyUs() {
   return (
     <section id="section-why-us" className="section-padding" style={{ backgroundColor: '#fafafa' }}>
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '50px', alignItems: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px', alignItems: 'center' }}>
           
           {/* Left Intro */}
           <div>
@@ -45,7 +45,7 @@ export default function WhyUs() {
           </div>
 
           {/* Right Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '24px' }}>
             {reasons.map((item, idx) => (
               <div
                 key={idx}

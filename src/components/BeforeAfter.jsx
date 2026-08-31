@@ -113,7 +113,15 @@ export default function BeforeAfter() {
             className="ba-slider-line"
             style={{ left: `${sliderPosition}%` }}
           >
-            <div className="ba-slider-handle" aria-label="Drag slider to compare before and after">
+            <div
+              className="ba-slider-handle"
+              role="slider"
+              aria-label="Drag slider to compare before and after"
+              aria-valuenow={Math.round(sliderPosition)}
+              aria-valuemin={0}
+              aria-valuemax={100}
+              tabIndex={0}
+            >
               <Sliders size={20} />
             </div>
           </div>

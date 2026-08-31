@@ -12,7 +12,7 @@ export default function About() {
   return (
     <section id="section-about" className="section-padding" aria-label="About HAVENCRAFT Remodeling">
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '50px', alignItems: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px', alignItems: 'center' }}>
           
           {/* Images Stack */}
           <div style={{ position: 'relative' }}>
@@ -60,7 +60,7 @@ export default function About() {
               exceptional craftsmanship and attention to detail.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', marginBottom: '32px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '14px', marginBottom: '32px' }}>
               {highlights.map((item, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', fontWeight: 600 }}>
                   <CheckCircle2 size={18} color="var(--primary)" />

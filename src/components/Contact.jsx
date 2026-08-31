@@ -67,7 +67,7 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} aria-label="Contact Consultation Form">
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
                   <div className="form-group">
                     <label htmlFor="name">Full Name *</label>
                     <input
@@ -99,7 +99,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
                   <div className="form-group">
                     <label htmlFor="phone">Phone Number</label>
                     <input

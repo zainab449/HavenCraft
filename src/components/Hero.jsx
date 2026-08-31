@@ -11,6 +11,7 @@ export default function Hero() {
         muted
         playsInline
         preload="metadata"
+        poster="/images/misc/l1.webp"
         className="hero-bg-video"
         aria-hidden="true"
       >
